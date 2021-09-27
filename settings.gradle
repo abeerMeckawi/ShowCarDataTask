@@ -1,0 +1,2 @@
+rootProject.name = "ShowCarDataTask"
+include ':app'
