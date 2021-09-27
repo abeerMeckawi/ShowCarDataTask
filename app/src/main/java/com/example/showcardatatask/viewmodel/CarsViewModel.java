@@ -24,7 +24,7 @@ public class CarsViewModel extends ViewModel {
 
     public CarsViewModel(){getCars();}
 
-    private void getCars() {
+    public void getCars() {
         if(page == -1) return;
         dataStatus.setValue(DataStatus.LOADING);
         APIClient.getRetrofitService().getCars(page).enqueue(new Callback<DataResponse>() {

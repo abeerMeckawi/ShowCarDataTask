@@ -6,6 +6,6 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 public interface APIService {
-    @GET("/api/v1/cars")
+    @GET("api/v1/cars")
     Call<DataResponse> getCars(@Query("page") int page);
 }
